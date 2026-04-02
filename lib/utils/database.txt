@@ -1,0 +1,2 @@
+database password = FsfN8DSIaWkrU1Yc;
+client secret = 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;

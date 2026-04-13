@@ -20,7 +20,7 @@ pluginManagement {
 plugins {
     id("dev.flutter.flutter-plugin-loader") version "1.0.0"
     id("com.android.application") version "8.9.1" apply false
-    // 🔥 UPDATE THIS LINE TO 2.3.10:
+    // Matching the internal Gradle Kotlin version:
     id("org.jetbrains.kotlin.android") version "2.3.10" apply false
 }
 

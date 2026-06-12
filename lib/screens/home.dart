@@ -17,7 +17,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   final AuthController controller = Get.put(AuthController());
 
-  // 🔥 NEW: Added a controller to easily clear the text when switching filters
   final TextEditingController _searchController = TextEditingController();
 
   // State variables for search
@@ -111,7 +110,7 @@ class _HomeState extends State<Home> {
 
                         final allVenues = snapshot.data!;
 
-                        // 🔥 NEW: Dynamic Filtering Logic based on the chosen category
+                        // Dynamic Filtering Logic based on the chosen category
                         final filteredVenues = _searchQuery.isEmpty
                             ? allVenues
                             : allVenues.where((venue) {
@@ -183,7 +182,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  // 🔥 NEW: Beautiful embedded selector inside the Search Bar
+  // Beautiful embedded selector inside the Search Bar
   Widget _buildSearchBar() {
     return Container(
       decoration: BoxDecoration(

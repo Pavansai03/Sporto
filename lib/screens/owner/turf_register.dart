@@ -116,7 +116,7 @@ class _TurfRegisterState extends State<TurfRegister> {
             height: 120,
             width: double.infinity,
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.1),
+              color: Colors.white.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: Colors.grey),
             ),
@@ -222,7 +222,7 @@ class _TurfRegisterState extends State<TurfRegister> {
             SizedBox(
               height: 55,
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.white.withOpacity(0.1), foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)), side: const BorderSide(color: Colors.grey)),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.white.withValues(alpha: 0.1), foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)), side: const BorderSide(color: Colors.grey)),
                 onPressed: () async {
                   if (address.isEmpty) return;
                   try {
@@ -324,7 +324,7 @@ class _TurfRegisterState extends State<TurfRegister> {
                         ],
                       ),
                       const SizedBox(height: 5),
-                      Container(height: 1.0, width: double.infinity, color: Colors.white.withOpacity(0.3)),
+                      Container(height: 1.0, width: double.infinity, color: Colors.white.withValues(alpha: 0.3)),
                     ],
                   ),
                 ),

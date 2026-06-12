@@ -67,7 +67,7 @@ class _VenuePageState extends State<VenuePage> {
                 Positioned(
                   left: 10,
                   child: CircleAvatar(
-                    backgroundColor: Colors.black.withOpacity(0.3),
+                    backgroundColor: Colors.black.withValues(alpha: 0.3),
                     child: IconButton(
                       icon: const Icon(Icons.arrow_back_ios_new, color: Colors.white, size: 20),
                       onPressed: () {
@@ -83,7 +83,7 @@ class _VenuePageState extends State<VenuePage> {
                 Positioned(
                   right: 10,
                   child: CircleAvatar(
-                    backgroundColor: Colors.black.withOpacity(0.3),
+                    backgroundColor: Colors.black.withValues(alpha: 0.3),
                     child: IconButton(
                       icon: const Icon(Icons.arrow_forward_ios, color: Colors.white, size: 20),
                       onPressed: () {
@@ -110,7 +110,7 @@ class _VenuePageState extends State<VenuePage> {
                   borderRadius: BorderRadius.circular(12),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.3), // Stronger shadow for elevation
+                      color: Colors.black.withValues(alpha: 0.3), // Stronger shadow for elevation
                       blurRadius: 10,
                       offset: const Offset(0, 4),
                     ),
@@ -144,7 +144,7 @@ class _VenuePageState extends State<VenuePage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(12),
-                  boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10)],
+                  boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 10)],
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

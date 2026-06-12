@@ -60,7 +60,7 @@ class UserOwnerToggle extends StatelessWidget {
 
                   // User Button
                   _buildRoleCard(
-                    title: "I'm a Player",
+                    title: "User",
                     subtitle: "Book turfs and join matches",
                     icon: Icons.sports_soccer,
                     onTap: () => Get.toNamed(RoutesName.login),
@@ -70,7 +70,7 @@ class UserOwnerToggle extends StatelessWidget {
 
                   // Owner Button
                   _buildRoleCard(
-                    title: "I'm an Owner",
+                    title: "Owner",
                     subtitle: "Register and manage your turf",
                     icon: Icons.stadium_outlined,
                     onTap: () {
